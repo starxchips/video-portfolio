@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nida Apa – Profile</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="icon" href="images/favicon/favicon.ico">
+</head>
+
+<body>
+
+<header class="nav-bar">
+    <nav class="nav">
+
+        <!-- LOGO -->
+        <div class="nav-logo">
+            <a href="index.html"><span class="star">*</span>N</a>
+        </div>
+
+        <!-- DESKTOP NAV LINKS -->
+        <ul class="nav-links">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- HAMBURGER BUTTON (MOBILE) -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+    <button class="close-menu">×</button>
+    <ul>
+        <li><a href="index.html">Work</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+<!-- PAGE CONTENT -->
+<main class="profile-page">
+
+    <!-- PROFILE INTRO -->
+    <section class="profile-section">
+        <div class="profile-container">
+
+            <div class="profile-text">
+                <h1 class="profile-title">Profile</h1>
+
+                <p class="profile-paragraph">
+                    Video creator with a background in Film, Television, and Digital Media,
+                    focused on interview-based storytelling, short-form content, and
+                    human-centered visual narratives.
+                </p>
+
+                <p class="profile-paragraph">
+                    Experienced in planning, organizing, filming, and editing video projects
+                    from start to finish. Comfortable working with participants, setting up
+                    lighting and audio, and shaping footage into clear, engaging stories
+                    for educational, institutional, and personal projects.
+                </p>
+
+                <p class="profile-paragraph">
+                    My work blends technical execution with thoughtful storytelling,
+                    ensuring that each video feels intentional, approachable, and easy to follow.
+                </p>
+            </div>
+
+            <div class="profile-image-wrapper">
+                <img src="images/nida-apa.jpeg" alt="Nida Apa" class="profile-image">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="expertise-section">
+        <h2>Expertise</h2>
+        <p>
+            Interview Filming & Direction • Short-Form Video Content •
+            On-Location Shooting • Lighting Setup • Audio Recording & Cleanup •
+            Video Editing & Post-Production • Participant Preparation •
+            Documentary-Style Storytelling
+        </p>
+    </section>
+</main>
+
+<footer class="footer-bar"></footer>
+
+<!-- SCRIPT -->
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const closeMenu = document.querySelector('.close-menu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+    });
+
+    closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+    });
+</script>
+
+</body>
+</html>
