@@ -344,6 +344,11 @@ body {
 }
 
 /* INTRO SECTION BELOW HERO */
+#video-work {
+    scroll-margin-top: 120px;
+  }
+  
+
 .intro-section {
     width: 100%;
     background: white;
