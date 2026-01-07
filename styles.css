@@ -344,6 +344,11 @@ body {
 }
 
 /* INTRO SECTION BELOW HERO */
+#video-work {
+    scroll-margin-top: 120px;
+  }
+  
+
 .intro-section {
     width: 100%;
     background: white;
@@ -383,7 +388,7 @@ body {
     width: min(85%, 1200px);
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
 }
 
 .portfolio-intro h2 {
@@ -500,7 +505,7 @@ body {
 .expertise-section {
     text-align: center;
     margin-top: 4rem;
-    padding: 0 16vw
+    padding: 0 16vw 5rem 16vw
 }
 
 .expertise-section h2 {
@@ -840,7 +845,13 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 2rem;
     text-align: center;
+    padding-bottom: 5rem;
 }
+
+.work-grid--four {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
 
 .work-card {
     display: flex;
@@ -1009,8 +1020,19 @@ form {
 }
 
 /* 1275PX AND BELOW MEDIA QUERIES*/
-@media (max-width: 1275px) {
+@media (max-width: 1470px) {
+.work-grid--four {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
 
+@media (max-width: 750px) {
+    .work-grid--four {
+      grid-template-columns: 1fr;
+    }
+  }
+
+@media (max-width: 1275px) {
     .nav-links {
         display: none;
     }
@@ -1022,7 +1044,7 @@ form {
     .nav {
         justify-content: space-between;
     }
-
+    
     .form-section {
         padding: 0
     }
@@ -1056,6 +1078,7 @@ form {
 
     .expertise-section {
         margin: 2rem;
+        padding-bottom: 5rem;
     }
 
     .tools-icons {
@@ -1203,7 +1226,7 @@ form {
 /* 900PX AND BELOW MEDIA QUERIES */
 @media (max-width: 900px) {
     .expertise-section {
-        padding: 0 8vw
+        padding: 0 8vw 5rem 8vw
     }
 
     .tools-section {
